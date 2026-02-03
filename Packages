@@ -1,0 +1,124 @@
+{
+  "packages": [
+    {
+      "name": "python3",
+      "version": "3.11.7",
+      "url": "https://www.python.org/ftp/python/3.11.7/Python-3.11.7.tgz",
+      "type": "source",
+      "description": "Python programming language",
+      "dependencies": []
+    },
+    {
+      "name": "wget",
+      "version": "1.21.4",
+      "url": "https://ftp.gnu.org/gnu/wget/wget-1.21.4.tar.gz",
+      "type": "source",
+      "description": "Network downloader",
+      "dependencies": []
+    },
+    {
+      "name": "curl",
+      "version": "8.5.0",
+      "url": "https://curl.se/download/curl-8.5.0.tar.gz",
+      "type": "source",
+      "description": "URL transfer tool",
+      "dependencies": []
+    },
+    {
+      "name": "vim",
+      "version": "9.0",
+      "url": "https://github.com/vim/vim/archive/refs/tags/v9.0.2189.tar.gz",
+      "type": "source",
+      "description": "Text editor",
+      "dependencies": []
+    },
+    {
+      "name": "nano",
+      "version": "7.2",
+      "url": "https://www.nano-editor.org/dist/v7/nano-7.2.tar.gz",
+      "type": "source",
+      "description": "Simple text editor",
+      "dependencies": []
+    },
+    {
+      "name": "htop",
+      "version": "3.3.0",
+      "url": "https://github.com/htop-dev/htop/releases/download/3.3.0/htop-3.3.0.tar.gz",
+      "type": "source",
+      "description": "Interactive process viewer",
+      "dependencies": []
+    },
+    {
+      "name": "git",
+      "version": "2.43.0",
+      "url": "https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.43.0.tar.gz",
+      "type": "source",
+      "description": "Version control system",
+      "dependencies": []
+    },
+    {
+      "name": "neofetch",
+      "version": "7.1.0",
+      "url": "https://github.com/dylanaraps/neofetch/archive/7.1.0.tar.gz",
+      "type": "tarball",
+      "description": "System information tool",
+      "dependencies": []
+    },
+    {
+      "name": "jq",
+      "version": "1.7",
+      "url": "https://github.com/jqlang/jq/releases/download/jq-1.7/jq-linux-amd64",
+      "type": "binary",
+      "description": "JSON processor",
+      "dependencies": []
+    },
+    {
+      "name": "micro",
+      "version": "2.0.13",
+      "url": "https://github.com/zyedidia/micro/releases/download/v2.0.13/micro-2.0.13-linux64.tar.gz",
+      "type": "tarball",
+      "description": "Modern terminal text editor",
+      "dependencies": []
+    },
+    {
+      "name": "fzf",
+      "version": "0.46.1",
+      "url": "https://github.com/junegunn/fzf/releases/download/0.46.1/fzf-0.46.1-linux_amd64.tar.gz",
+      "type": "tarball",
+      "description": "Fuzzy finder",
+      "dependencies": []
+    },
+    {
+      "name": "bat",
+      "version": "0.24.0",
+      "url": "https://github.com/sharkdp/bat/releases/download/v0.24.0/bat-v0.24.0-x86_64-unknown-linux-musl.tar.gz",
+      "type": "tarball",
+      "description": "Cat clone with syntax highlighting",
+      "dependencies": []
+    },
+    {
+      "name": "ripgrep",
+      "version": "14.1.0",
+      "url": "https://github.com/BurntSushi/ripgrep/releases/download/14.1.0/ripgrep-14.1.0-x86_64-unknown-linux-musl.tar.gz",
+      "type": "tarball",
+      "description": "Fast grep alternative",
+      "dependencies": []
+    },
+    {
+      "name": "fd",
+      "version": "9.0.0",
+      "url": "https://github.com/sharkdp/fd/releases/download/v9.0.0/fd-v9.0.0-x86_64-unknown-linux-musl.tar.gz",
+      "type": "tarball",
+      "description": "Fast find alternative",
+      "dependencies": []
+    },
+    {
+      "name": "exa",
+      "version": "0.10.1",
+      "url": "https://github.com/ogham/exa/releases/download/v0.10.1/exa-linux-x86_64-v0.10.1.zip",
+      "type": "binary",
+      "description": "Modern ls replacement",
+      "dependencies": []
+    }
+  ]
+}
