@@ -5,7 +5,7 @@
       "version": "3.12",
       "description": "Python 3 programming language",
       "type": "copy-from-host",
-      "install_instructions": "Run on host: bash install_python3_to_luna.sh",
+      "install_instructions": "Run on host: cp /usr/bin/python3 rootfs/usr/local/bin/python3 and copy libs",
       "size": "~150MB",
       "dependencies": [],
       "maintainer": "ralffix"
@@ -32,23 +32,13 @@
       "maintainer": "ralffix"
     },
     {
-      "name": "wget",
-      "version": "1.21",
-      "description": "Network downloader",
-      "type": "copy-from-host",
-      "install_instructions": "Copy from host system",
-      "size": "~1MB",
-      "dependencies": [],
-      "maintainer": "ralffix"
-    },
-    {
       "name": "curl",
       "version": "8.10.1",
       "description": "Transfer data with URLs",
       "type": "binary",
       "url": "https://github.com/stunnel/static-curl/releases/download/8.10.1/curl-linux-x86_64-8.10.1.tar.xz",
       "install_script": "tar -xf curl-linux-x86_64-8.10.1.tar.xz && cp curl /usr/local/bin/curl && chmod +x /usr/local/bin/curl",
-      "size": "~4MB",
+      "size": "4MB",
       "dependencies": [],
       "maintainer": "ralffix"
     },
@@ -98,11 +88,143 @@
     },
     {
       "name": "htop",
-      "version": "latest",
+      "version": "3.3.0",
       "description": "Interactive process viewer",
       "type": "copy-from-host",
-      "install_instructions": "Copy from host: cp /usr/bin/htop initramfs/usr/bin/",
-      "size": "~200KB",
+      "install_instructions": "Run on host: cp /usr/bin/htop rootfs/usr/local/bin/htop",
+      "size": "200KB",
+      "dependencies": [],
+      "maintainer": "ralffix"
+    },
+    {
+      "name": "git",
+      "version": "2.46.0",
+      "description": "Version control system",
+      "type": "tarball",
+      "url": "https://github.com/nicowillis/static-git/releases/download/v2.46.0/git-linux-amd64.tar.gz",
+      "install_script": "cp git /usr/local/bin/git && chmod +x /usr/local/bin/git",
+      "size": "10MB",
+      "dependencies": [],
+      "maintainer": "ralffix"
+    },
+    {
+      "name": "vim",
+      "version": "9.1",
+      "description": "Powerful text editor",
+      "type": "binary",
+      "url": "https://github.com/dtschan/vim-static/releases/download/v7.4/vim",
+      "size": "2MB",
+      "dependencies": [],
+      "maintainer": "ralffix"
+    },
+    {
+      "name": "nano",
+      "version": "7.2",
+      "description": "Simple terminal text editor",
+      "type": "binary",
+      "url": "https://github.com/nicowillis/static-nano/releases/download/v7.2/nano-linux-amd64",
+      "size": "1MB",
+      "dependencies": [],
+      "maintainer": "ralffix"
+    },
+    {
+      "name": "gcc",
+      "version": "13",
+      "description": "GNU C compiler",
+      "type": "copy-from-host",
+      "install_instructions": "Run on host: cp /usr/bin/gcc rootfs/usr/local/bin/gcc and copy libs",
+      "size": "~50MB",
+      "dependencies": [],
+      "maintainer": "ralffix"
+    },
+    {
+      "name": "make",
+      "version": "4.3",
+      "description": "GNU build tool",
+      "type": "copy-from-host",
+      "install_instructions": "Run on host: cp /usr/bin/make rootfs/usr/local/bin/make",
+      "size": "~500KB",
+      "dependencies": [],
+      "maintainer": "ralffix"
+    },
+    {
+      "name": "nodejs",
+      "version": "20.11.0",
+      "description": "JavaScript runtime (LTS)",
+      "type": "tarball",
+      "url": "https://nodejs.org/dist/v20.11.0/node-v20.11.0-linux-x64.tar.xz",
+      "install_script": "tar -xf node-v20.11.0-linux-x64.tar.xz && cp node-v20.11.0-linux-x64/bin/node /usr/local/bin/node && cp node-v20.11.0-linux-x64/bin/npm /usr/local/bin/npm && chmod +x /usr/local/bin/node /usr/local/bin/npm",
+      "size": "~50MB",
+      "dependencies": [],
+      "maintainer": "ralffix"
+    },
+    {
+      "name": "lua",
+      "version": "5.4.6",
+      "description": "Lightweight scripting language",
+      "type": "copy-from-host",
+      "install_instructions": "Run on host: cp /usr/bin/lua5.4 rootfs/usr/local/bin/lua",
+      "size": "~300KB",
+      "dependencies": [],
+      "maintainer": "ralffix"
+    },
+    {
+      "name": "nmap",
+      "version": "7.94",
+      "description": "Network scanner",
+      "type": "copy-from-host",
+      "install_instructions": "Run on host: cp /usr/bin/nmap rootfs/usr/local/bin/nmap and copy libs",
+      "size": "~5MB",
+      "dependencies": [],
+      "maintainer": "ralffix"
+    },
+    {
+      "name": "netcat",
+      "version": "1.10",
+      "description": "TCP/UDP networking utility",
+      "type": "binary",
+      "url": "https://github.com/nicowillis/static-netcat/releases/download/v1.10/nc-linux-amd64",
+      "size": "100KB",
+      "dependencies": [],
+      "maintainer": "ralffix"
+    },
+    {
+      "name": "ssh",
+      "version": "9.6",
+      "description": "Secure shell client",
+      "type": "copy-from-host",
+      "install_instructions": "Run on host: cp /usr/bin/ssh rootfs/usr/local/bin/ssh and copy libs",
+      "size": "~1MB",
+      "dependencies": [],
+      "maintainer": "ralffix"
+    },
+    {
+      "name": "cmatrix",
+      "version": "2.0",
+      "description": "Matrix-style terminal animation",
+      "type": "copy-from-host",
+      "install_instructions": "Run on host: cp /usr/bin/cmatrix rootfs/usr/local/bin/cmatrix",
+      "size": "~50KB",
+      "dependencies": [],
+      "maintainer": "ralffix"
+    },
+    {
+      "name": "cowsay",
+      "version": "3.04",
+      "description": "Configurable talking cow",
+      "type": "copy-from-host",
+      "install_instructions": "Run on host: cp /usr/games/cowsay rootfs/usr/local/bin/cowsay",
+      "size": "~50KB",
+      "dependencies": [],
+      "maintainer": "ralffix"
+    },
+    {
+      "name": "figlet",
+      "version": "2.2.5",
+      "description": "ASCII art text banner maker",
+      "type": "copy-from-host",
+      "install_instructions": "Run on host: cp /usr/bin/figlet rootfs/usr/local/bin/figlet",
+      "size": "~100KB",
       "dependencies": [],
       "maintainer": "ralffix"
     }
